@@ -11,12 +11,13 @@ function url($url)
     return trim(BASE_URL,'/ '). '/' . trim($url,'/ ');
 
 }
+//for debuging
  function dd($var){
     echo '<pree>';
     var_dump($var);
     exit;
  }
-
+// Validation nationalcode
 function nationalcode($nationalcode)
 {
 
@@ -45,6 +46,25 @@ function nationalcode($nationalcode)
     }
 
     return $cDigitLast == $controllerNumber;
+
+}
+//Validation number phone
+function phone($phone){
+    if(preg_match("/^09[0-9]{9}$/", $phone)) {
+        return true;
+    }else{
+        return false;
+    }
+}
+//Validation Persian entries
+function checkstring( $string)
+{
+    if (preg_match('/^[\p{Arabic}\p{Zs}]+$/u', $string)) {
+        return true;
+    } else {
+        return false;
+    }
+
 
 }
 
