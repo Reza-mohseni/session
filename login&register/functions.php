@@ -3,7 +3,7 @@
 define('BASE_URL','http://localhost/programmer/session/login&register/');
 
 function redirect($url){
-    header('Location'.trim(BASE_URL, '/ '). '/'. trim($url,'/ '));
+    header('Location: '.trim(BASE_URL, '/ '). '/' . trim($url,'/ '));
     exit;
 }
 function url($url)

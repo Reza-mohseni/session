@@ -21,19 +21,41 @@ if(
                       if(checkpass($_POST['password'])===true){
                           if (strlen($_POST['password'])>8)
                          {
-                              $query= 'SELECT * session.users WHERE national_code = ?';
+                              $query= 'SELECT * FROM session.users WHERE national_code = ?';
                               $statement=$pdo->prepare($query);
                               $statement->execute([$_POST['national_code']]);
                               $user= $statement->fetch();
                               if($user===false)
                               {
-                                $query='INSERT INTO session.users SET first_name= ?, last_name= ?, phone =?, national_code= ?, password= ?';
+                                $query= 'INSERT INTO session.users SET  first_name = ?, last_name = ?, phone = ?, national_code = ?, password = ?, create_at = now() ;';
                                 $password=password_hash($_POST['password'],PASSWORD_DEFAULT);
-                                $statement->execute([$_POST['first_name'],$_POST['last_name'],$_POST['phone'],$_POST['national_code'],$password]);
-                                redirect('index.php');
+                                $statement->execute([$_POST['first_name'], $_POST['last_name'] ,$_POST['phone'] ,$_POST['national_code'], $password]);
+//                                redirect('index.php');
                               }else{
                                   $error='شما قبلا ثبت نام کرده اید';
                               }
+//                              $query = 'SELECT * FROM session.users WHERE national_code = ?';
+//                              $statement = $pdo->prepare($query);
+//                              $statement->execute([$_POST['national_code']]);
+//                              $user = $statement->fetch();
+//
+//                              if ($user === false) {
+//                                  $query = "INSERT INTO session.users (first_name, last_name, phone, national_code, password)
+//                VALUES (:first_name, :last_name, :phone, :national_code, :password)";
+//                                  $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+//                                  $statement = $pdo->prepare($query);
+//                                  $statement->execute([
+//                                      ':first_name' => $_POST['first_name'],
+//                                      ':last_name' => $_POST['last_name'],
+//                                      ':phone' => $_POST['phone'],
+//                                      ':national_code' => $_POST['national_code'],
+//                                      ':password' => $password
+//                                  ]);
+//                                  redirect('/login.php');
+//                              } else {
+//                                  $error = 'شما قبلا ثبت نام کرده اید';
+//                              }
+
                           } else $error='رمز عبور باید حداقل 8 کارکتر باشد';
                       }else $error='پسورد باید حداقل یک حرف بزرک و یک حرف کوچک و یک عدد و علامت هایی مثل @#$ داشته باشد';
                   }else{
