@@ -23,8 +23,8 @@ if (
                 {
                     if ( checkstring( $_POST[ 'first_name' ] ) === true )
                     {
-                        if ( checkpass( $_POST[ 'password' ] ) === true )
-                        {
+                       // if ( checkpass( $_POST[ 'password' ] ) === true )
+                      //  {
                             if ( strlen( $_POST[ 'password' ] ) > 8 )
                             {
 //                                $query     = 'SELECT * FROM session.users WHERE national_code = ?';
@@ -42,7 +42,7 @@ if (
 //                                else
 //                                {
 //                                    $error = 'شما قبلا ثبت نام کرده اید';
-                                }
+
                               $query = 'SELECT * FROM session.users WHERE national_code = ?';
                               $statement = $pdo->prepare($query);
                               $statement->execute([$_POST['national_code']]);
@@ -67,8 +67,8 @@ if (
 
                             }
                             else $error = 'رمز عبور باید حداقل 8 کارکتر باشد';
-                       }
-                        else $error = 'پسورد باید حداقل یک حرف بزرک و یک حرف کوچک و یک عدد و علامت هایی مثل @#$ داشته باشد';
+                      // }
+                       // else $error = 'پسورد باید حداقل یک حرف بزرک و یک حرف کوچک و یک عدد و علامت هایی مثل @#$ داشته باشد';
                     }
                     else
                     {
