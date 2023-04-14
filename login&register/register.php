@@ -2,7 +2,42 @@
 
 require_once 'database.php';
 require_once 'functions.php';
-$error='pdpksadld';
+$error='';
+if(
+        isset($_POST['first_name'])&&$_POST['first_name']!=='' &&
+        isset($_POST['last_name'])&&$_POST['last_name']!==''&&
+        isset($_POST['phone'])&&$_POST['phone']!==''&&
+        isset($_POST['national_code'])&&$_POST['national_code']!==''&&
+        isset($_POST['password'])&&$_POST['password']!==''&&
+        isset($_POST['confirm'])&&$_POST['confirm']!=='')
+{
+    if($_POST['password']===$_POST['confirm']){
+      if(nationalcode($_POST['national_code'])===true) {
+          if (phone($_POST['phone']) === true)
+          {
+              if(checkstring($_POST['last_name'])===true) {
+                  if (checkstring($_POST['first_name']) === true){
+                      
+                  }else{
+                      $error='لطفا نام خود را به فارسی وارد کنید';
+                  }
+
+              }else {
+                  $error='لطفا فامیل خود را به فارسی فارد کنید';
+              }
+          }else{
+              $error='شماره موبایل صحیح نمی باشد';
+          }
+      }else{
+          $error='کدملی وارد شده صحیح نمی باشد';
+      }
+    }
+    else{
+        $error='رمز عبور با تکرار رمز عبور مطابقت ندارد';
+    }
+}else{
+    $error='لطفا تمامی فیلد هارا پر کنید';
+}
 
 ?>
 <html>
