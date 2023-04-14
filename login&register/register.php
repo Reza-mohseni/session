@@ -33,9 +33,10 @@ if (
                                 $user = $statement->fetch();
                                 if ( $user === false )
                                 {
-                                    $query    = 'INSERT INTO session.users SET  first_name = ?, last_name = ?, phone = ?, national_code = ?, password = ?, create_at = now() ;';
-                                    $password = password_hash( $_POST[ 'password' ], PASSWORD_DEFAULT );
-                                    $statement->execute( [ $_POST[ 'first_name' ], $_POST[ 'last_name' ], $_POST[ 'phone' ], $_POST[ 'national_code' ], $password ] );
+                                    $query     = 'INSERT INTO session.users SET  first_name = ?, last_name = ?, phone = ?, national_code = ?, password = ?, create_at = now() ;';
+                                    $password  = password_hash( $_POST[ 'password' ], PASSWORD_DEFAULT );
+                                    $statement = $pdo->prepare( $query, [ $_POST[ 'first_name' ], $_POST[ 'last_name' ], $_POST[ 'phone' ], $_POST[ 'national_code' ], $password ] );
+                                    $statement->execute();
 //                                redirect('index.php');
                                 }
                                 else
