@@ -1,11 +1,8 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-
-}
+require_once 'database.php';
+require_once 'functions.php';
 
 ?>
-////pdo به دیتابیس وصل میشی و یک جدول میسازی کاربر رو ایجاد میکنی بعد ولیدیت بعد از اینکه
 <html>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -13,25 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ثبت نام</title>
+    <title>ورود</title>
     <style>
-        @font-face {
-            font-family: IRANSansWebFaNum-med;
-            font-style: normal;
-            font-weight: 100;
-            src: url("fonts/woff/IRANSansX-Medium.woff") format("woff"),
-            url("fonts/woff2/IRANSansX-Medium.woff2") format("woff2");
-        }
-        @font-face {
-            font-family: IRANSansWebFaNum-bold;
-            font-style: normal;
-            font-weight: 500;
-            src: url("fonts/woff/IRANSansX-Bold.woff") format("woff"),
-            url("fonts/woff2/IRANSansX-Bold.woff2") format("woff2");
-        }
-        .h3{
-            font-family:"IRANSansWebFaNum-bold" ;
-        }
+
     </style>
 </head>
 <body dir="rtl">

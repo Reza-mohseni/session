@@ -1,9 +1,8 @@
 <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-
-}
+require_once 'database.php';
+require_once 'functions.php';
+$error='pdpksadld';
 
 ?>
 <html>
@@ -16,25 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ثبت نام</title>
     <style>
-        @font-face {
-            font-family: IRANSansWebFaNum-med;
-            font-style: normal;
-            font-weight: 100;
-            src: url("fonts/woff/IRANSansX-Medium.woff") format("woff"),
-            url("fonts/woff2/IRANSansX-Medium.woff2") format("woff2");
-        }
 
-        @font-face {
-            font-family: IRANSansWebFaNum-bold;
-            font-style: normal;
-            font-weight: 500;
-            src: url("fonts/woff/IRANSansX-Bold.woff") format("woff"),
-            url("fonts/woff2/IRANSansX-Bold.woff2") format("woff2");
-        }
-
-        .h3 {
-            font-family: "IRANSansWebFaNum-bold";
-        }
     </style>
 </head>
 <body dir="rtl">
@@ -46,15 +27,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <h3 class="text-center"> عضویت</h3>
                 </div>
                 <div class="card-body">
-                    <form method="post" class="numbers">
+                    <form method="post" class="numbers" action="<?= url(register.php) ?>">
+                        <div class="text-danger">
+                            <?php
+                            if ($error !== ''){echo 'خطا=' . $error;}
+                            ?>
+                        </div>
                         <div class="mb-3">
                             <label class="form-label text-right">نام </label>
-                            <input type="text" class="form-control form-start" name="name">
+                            <input type="text" class="form-control form-start" name="first_name">
 
                         </div>
                         <div class="mb-3">
                             <label class="form-label ">نام خانوادگی </label>
-                            <input type="text" class="form-control form-start" name="lastname">
+                            <input type="text" class="form-control form-start" name="last_name">
 
                         </div>
                         <div class="mb-3">
@@ -64,17 +50,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                         <div class="mb-3">
                             <label class="form-label ">کد ملی </label>
-                            <input type="text" class="form-control form-start" name="meli">
+                            <input type="text" class="form-control form-start" name="national_code">
 
                         </div>
                         <div class="mb-3">
                             <label class="form-label text-right">پسورد </label>
-                            <input type="password" class="form-control form-start" name="pass">
+                            <input type="password" class="form-control form-start" name="password">
 
                         </div>
                         <div class="mb-3">
                             <label class="form-label ">تکرار پسورد </label>
-                            <input type="password" class="form-control form-start" name="passrep">
+                            <input type="password" class="form-control form-start" name="confirm">
 
                         </div>
 
