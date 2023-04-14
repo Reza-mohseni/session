@@ -67,5 +67,11 @@ function checkstring( $string)
 
 
 }
-
+ function checkpass($password){
+     if (preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/', $password)) {
+         return true;
+     } else {
+         return false;
+     }
+ }
 
