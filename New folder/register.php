@@ -27,22 +27,6 @@ if (
                       //  {
                             if ( strlen( $_POST[ 'password' ] ) > 8 )
                             {
-//                                $query     = 'SELECT * FROM session.users WHERE national_code = ?';
-//                                $statement = $pdo->prepare( $query, [ $_POST[ 'national_code' ] ] );
-//                                $statement->execute();
-//                                $user = $statement->fetch();
-//                                if ( $user === false )
-//                                {
-//                                    $query     = 'INSERT INTO session.users SET  first_name = ?, last_name = ?, phone = ?, national_code = ?, password = ?, create_at = now() ;';
-//                                    $password  = password_hash( $_POST[ 'password' ], PASSWORD_DEFAULT );
-//                                    $statement = $pdo->prepare( $query, [ $_POST[ 'first_name' ], $_POST[ 'last_name' ], $_POST[ 'phone' ], $_POST[ 'national_code' ], $password ] );
-//                                    $statement->execute();
-////                                redirect('index.php');
-//                                }
-//                                else
-//                                {
-//                                    $error = 'شما قبلا ثبت نام کرده اید';
-
                               $query = 'SELECT * FROM session.users WHERE national_code = ?';
                               $statement = $pdo->prepare($query);
                               $statement->execute([$_POST['national_code']]);
