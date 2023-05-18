@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="29046d1d-2f60-486a-bef2-87ad30e31a41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/doshbord/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../login&amp;register/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../login&amp;register/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +32,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/programmer/session/blog/admin/doshbord",
+    "last_opened_file_path": "C:/xampp/htdocs/programmer/session/blog",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "settings.nodejs",
     "vue.rearranger.settings.migration": "true"
@@ -51,6 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683955751684</updated>
       <workItem from="1683955752795" duration="3590000" />
+      <workItem from="1684400114003" duration="696000" />
     </task>
     <servers />
   </component>
