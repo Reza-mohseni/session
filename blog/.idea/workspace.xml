@@ -5,11 +5,237 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29046d1d-2f60-486a-bef2-87ad30e31a41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/404.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/00.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/helpers/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/helpers/url.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/css/adminlte.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/css/adminlte.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/css/adminlte.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/css/bootstrap-rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/css/custom-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/css/persian-datepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Black.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Black.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Thin.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Thin.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir-Thin.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/fonts/Vazir.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/AdminLTELogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/avatar04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/credit/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/credit/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/credit/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/credit/mestro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/credit/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/credit/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/credit/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/default-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/user1-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/user3-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/img/user8-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/adminlte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/adminlte.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/adminlte.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/adminlte.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/pages/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/pages/dashboard2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/pages/dashboard3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/persian-date.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/persian-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chart.js2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/Chart.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/Chart.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/axes/cartesian/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/axes/cartesian/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/axes/cartesian/linear.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/axes/cartesian/logarithmic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/axes/cartesian/time.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/axes/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/axes/labelling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/axes/radial/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/axes/radial/linear.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/axes/styling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/charts/area.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/charts/bar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/charts/bubble.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/charts/doughnut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/charts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/charts/line.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/charts/mixed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/charts/polar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/charts/radar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/charts/scatter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/configuration/animations.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/configuration/elements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/configuration/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/configuration/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/configuration/legend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/configuration/title.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/configuration/tooltip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/developers/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/developers/axes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/developers/charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/developers/contributing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/developers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/developers/plugins.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/developers/updates.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/general/colors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/general/device-pixel-ratio.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/general/fonts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/general/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/general/interactions/events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/general/interactions/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/general/interactions/modes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/general/options.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/general/responsive.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/getting-started/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/getting-started/installation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/getting-started/integration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/getting-started/usage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-anchorjs/anchor-style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-chartjs/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-fontsettings/fontsettings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-fontsettings/website.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-ga/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-highlight/ebook.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-highlight/website.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-search-plus/jquery.mark.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-search-plus/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-search-plus/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook-plugin-sharing/buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/gitbook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/images/apple-touch-icon-precomposed-152.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/gitbook/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/notes/comparison.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/notes/extensions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/notes/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/notes/license.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/search_plus_index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/chartjs2/docs/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/font-awesome/css/font-awesome.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/jquery/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/jquery/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/esm/popper-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/esm/popper-utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/esm/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/esm/popper-utils.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/esm/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/esm/popper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/esm/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/esm/popper.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/popper-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/popper-utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/popper-utils.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/popper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/popper.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/umd/popper-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/umd/popper-utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/umd/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/umd/popper-utils.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/umd/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/umd/popper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/umd/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/assets/js/plugins/popper/umd/popper.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/category/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/category/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/category/edite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/category/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/layouts/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/layouts/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/layouts/sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/post/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/post/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/post/edite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/adminpanel/pages/post/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,28 +253,37 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Pj1bwEKOPLNUApmDlrSeXQ4o5o" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/programmer/session/blog&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/programmer/session/blog/views/adminpanel/pages/post",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\programmer\session\blog\views\adminpanel\pages\post" />
+      <recent name="C:\xampp\htdocs\programmer\session\blog\views\assets" />
       <recent name="C:\xampp\htdocs\programmer\session\blog\admin\doshbord" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\programmer\session\blog\views\adminpanel\pages" />
+      <recent name="C:\xampp\htdocs\programmer\session\blog\views\adminpanel" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -63,6 +298,7 @@
       <workItem from="1684400114003" duration="696000" />
       <workItem from="1684400811964" duration="1293000" />
       <workItem from="1684416249230" duration="9834000" />
+      <workItem from="1684488158241" duration="3094000" />
     </task>
     <servers />
   </component>
