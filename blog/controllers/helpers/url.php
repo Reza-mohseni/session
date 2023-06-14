@@ -1,6 +1,8 @@
 <?php
-define('BASE_URL',"http://localhost/programmer/session/blog/");
+$isHttps = isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] === 'on' || $_SERVER['HTTPS'] === 1 || $_SERVER['SERVER_PORT'] === 443);
+$ishttps = $isHttps ? 'https://' : 'http://';
 
+define('BASE_URL',$ishttps . $_SERVER['SERVER_NAME'] . "/programmer/session/blog");
 
 function redirect($url)
 {
@@ -9,7 +11,7 @@ function redirect($url)
 }
 function asset($file)
 {
-    return trim(BASE_URL, '/ ') . '/' . trim($file, '/ ');
+    return trim(BASE_URL, '/ ') . '/' .'views/assets/' . trim($file, '/ ');
 }
 
 function url($url)

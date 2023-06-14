@@ -1,9 +1,9 @@
 <?php
 
 
-$userName="{{dbusername}}";
-$password="{{dbpassword}}";
-$dbName="{{dbname}}";
+$userName="root";
+$password="";
+$dbName="blog";
 
 global $pdo;
 try {
