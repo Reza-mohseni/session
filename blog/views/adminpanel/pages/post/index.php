@@ -102,21 +102,25 @@ require_once '../../../../model/database.php';
                                 </thead>
                                 <tbody>
                                 <?php
+
                                 global $pdo;
-                                $columns = ['*'];
-                                $tableName = "posts";
-                                $results = selectFromTable($pdo, $tableName, $columns, []);
-                                foreach ($results as $post)
+                                $query = "SELECT blog.posts.*, blog.categories.name AS category_name FROM blog.posts LEFT JOIN blog.categories ON blog.posts.cat_id = blog.categories.id";
+                                $statement = $pdo->prepare($query);
+                                $statement->execute();
+                                $posts = $statement->fetchAll();
+                                foreach ($posts as $post)
+
                                 {
                                 ?>
                                 <tr>
-                                    <td><?= $post['id'] ?></td>
+
+                                    <td><?= $post['id']  ?></td>
                                     <td>
-                                        <img style="width: 90px;" src="">
+                                        <img style="width: 90px;" src="<?php echo asset($post['image']) ?>" >
 
                                     </td>
                                     <td><?= $post['titel'] ?></td>
-                                    <td><?= $post['cat_id'] ?></td>
+                                    <td><?= $post['category_name'] ?></td>
                                     <td><?= substr($post['body'],0,20)."..." ?></td>
                                     <td>
                                         <?php
@@ -130,7 +134,7 @@ require_once '../../../../model/database.php';
                                     </td>
                                     <td>
                                         <a href="" class="btn btn-warning btn-sm">تغییر وضعیت</a>
-                                        <a href="" class="btn btn-info btn-sm">ویرایش</a>
+                                        <a href="<?= url('views/adminpanel/pages/post/edite.php?post_id='.$post['id']) ?>" class="btn btn-info btn-sm">ویرایش</a>
                                         <a href="" class="btn btn-danger btn-sm">حذف</a>
                                     </td>
                                 </tr>

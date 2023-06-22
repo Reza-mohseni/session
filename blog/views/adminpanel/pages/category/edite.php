@@ -4,7 +4,6 @@ require_once '../../../../model/database.php';
 if (!isset($_GET['cat_id'])){
    redirect('views/adminpanel/pages/category/');
 }
-//dd($_POST['cat_id']);
 global $pdo;
 $columns = ['*'];
 $tableName = "categories";
@@ -13,7 +12,6 @@ $conditions =[
 ];
 
  $results = selectFromTable($pdo, $tableName, $columns, $conditions);
-// dd($results);
 
 if ($results===false){
     redirect('views/adminpanel/pages/category/');
